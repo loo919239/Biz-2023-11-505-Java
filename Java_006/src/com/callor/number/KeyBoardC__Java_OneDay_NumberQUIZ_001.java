@@ -3,14 +3,12 @@ package com.callor.number;
 import java.util.Scanner;
 
 public class KeyBoardC__Java_OneDay_NumberQUIZ_001 {
+
 	public static void sub() {
 		Scanner scan = new Scanner(System.in);
 		int rndNum = (int) (Math.random() * 50) + 1;
 		int count = 0;
 		boolean test = true;
-		
-		
-		
 
 		System.out.println("=".repeat(50));
 		System.out.println("뤼팡의 황금열쇠를 찾아라");
@@ -57,29 +55,28 @@ public class KeyBoardC__Java_OneDay_NumberQUIZ_001 {
 				System.out.println("황금열쇠 찾기에 실패했습니다.");
 				System.out.println("황금열쇠 : " + rndNum);
 				System.out.println("-".repeat(50));
-				System.out.println("게임을 다시 시작할까요?");
-				System.out.println("다시 하려면 '재시작' 게임을 그만하려면 '종료' ");
-				System.out.print("입력 >> ");
 				test = false;
 			}
 		} // end while
 	}
 
 	public static void main(String[] args) {
-		sub();
-		Scanner scan = new Scanner(System.in);
-		String str = scan.nextLine();
 		boolean test = true;
 		while (test) {
+			sub();
+			System.out.println("게임을 다시 시작할까요?");
+			System.out.println("다시 하려면 '재시작' 게임을 그만하려면 '종료' ");
+			System.out.print("입력 >> ");
+			Scanner scan = new Scanner(System.in);
+			String str = scan.nextLine();
 			if (str.equalsIgnoreCase("재시작")) {
 				System.out.println("게임을 다시 시작합니다!");
-				break;
+				continue;
 			} else if (str.equalsIgnoreCase("종료")) {
 				System.out.println("게임을 종료합니다");
 				return;
 			}
 		}
-		sub();
 
 	}// end main
 }
