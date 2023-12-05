@@ -45,7 +45,7 @@ public class StringC {
 			String[] lines = subStr.split(",");
 			for (int i = 0; i < lines.length; i++) {
 			System.out.println(lines[i]);
-
+			
 		}
 		}
 		scan.close();
