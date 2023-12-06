@@ -1,6 +1,5 @@
 package com.callor.oop.keyboard;
 
-import java.text.BreakIterator;
 import java.util.Scanner;
 
 public class KeyBoardA {
@@ -8,7 +7,8 @@ public class KeyBoardA {
 
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
-
+		
+	
 		System.out.println("=".repeat(30));
 		System.out.println("짝수 찾기");
 		System.out.println("=".repeat(30));
