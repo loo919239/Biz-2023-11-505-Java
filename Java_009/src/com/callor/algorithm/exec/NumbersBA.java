@@ -2,19 +2,20 @@ package com.callor.algorithm.exec;
 
 import java.util.Scanner;
 
+import com.callor.algorithm.service.NumberService;
 import com.callor.algorithm.utils.Line;
 
-public class NumbersB {
+public class NumbersBA {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		NumberService numService = new NumberService();
 		
 		Line.dLine(80);
-		System.out.printf("숫자를 입력하세요 >> ");
-		String str = scan.nextLine();
-		int num = Integer.valueOf(str);
+		
+		int num = numService.inputNum("숫자를");
 		Line.sLine(80);
 		for (int i = 0; i < num; i++) {
-			for (int j = 0; j <= i; j++) {
+//			System.out.printf("%3d",i);
+			for (int j = 0; j < i + 1; j++) {
 				System.out.printf("* ");
 			}
 			System.out.println();
