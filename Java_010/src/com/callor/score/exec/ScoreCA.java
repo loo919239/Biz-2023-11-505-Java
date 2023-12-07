@@ -55,10 +55,10 @@ public class ScoreCA {
 		for(int i = 0; i < scores.size();i++) {
 			ScoreDto dto = scores.get(i);
 			
-			System.err.printf("%d\t",dto.kor);
-			System.err.printf("%d\t",dto.eng);
-			System.err.printf("%d\t",dto.math);
-			System.err.printf("%d\t\n",dto.getTotal());
+			System.out.printf("%d\t",dto.kor);
+			System.out.printf("%d\t",dto.eng);
+			System.out.printf("%d\t",dto.math);
+			System.out.printf("%d\t\n",dto.getTotal());
 		}
 
 	}
