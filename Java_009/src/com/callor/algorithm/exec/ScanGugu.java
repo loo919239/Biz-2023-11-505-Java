@@ -1,6 +1,5 @@
 package com.callor.algorithm.exec;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 import com.callor.algorithm.utils.Line;
