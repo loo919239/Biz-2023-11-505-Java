@@ -77,7 +77,9 @@ public class ScoreService {
 		scoreDto.kor = scoreKor;
 		scoreDto.eng = scoreEng;
 		scoreDto.math = scoreMath;
-
+		
+		
+		
 		scores.add(scoreDto);
 	}
 	
