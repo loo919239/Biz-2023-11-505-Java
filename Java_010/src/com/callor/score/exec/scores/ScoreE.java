@@ -1,4 +1,4 @@
-package com.callor.score.exec;
+package com.callor.score.exec.scores;
 
 import com.callor.score.service.ScoreService;
 import com.callor.score.utils.Line;
@@ -17,5 +17,6 @@ public class ScoreE {
 			Line.dLine(40);
 			System.out.println("학번\t국어\t영어\t수학\t총점");
 			Line.sLine(40);
+			
 	}
 }
