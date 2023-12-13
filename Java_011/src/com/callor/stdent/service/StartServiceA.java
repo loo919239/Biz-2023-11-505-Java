@@ -7,6 +7,7 @@ import com.callor.stdent.utils.Line;
 public class StartServiceA {
 	private StudentServiecV3 stService = null;
 	private String[] menuItems = null;
+	
 	Scanner scan = null;
 
 	public StartServiceA() {

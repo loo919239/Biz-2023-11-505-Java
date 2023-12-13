@@ -40,7 +40,7 @@ public class StudentServiceV2A {
 		// for() 반복문을 이용하여 입력 받을 코드 줄이기
 
 		for (int index = 0; index < stdTitle.length; index++) {
-			System.out.print(stdTitle[index] + " 입력 >> ");
+			System.out.print(stdTitle[index] + " 입력(QUIT:종료) >> ");
 //			inputStr[index] = scan.nextLine();
 			String str = scan.nextLine();
 			if (str.equalsIgnoreCase("QUIT")) {

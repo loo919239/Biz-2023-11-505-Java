@@ -8,10 +8,11 @@ package com.callor.student.models;
  * 각 요소를 학번, 이름, 학과, 학년, 전화번호, 주소 라는 이름으로 선언
  * 그리고 각 요소는 index 라는 값을 갖는다
  */
-public enum StIndex {
-	학번(0), 이름(1), 학과(2), 학년(3), 전화번호(5), 주소(6);
+public enum StdIndex {
+	학번(0), 이름(1), 학과(2), 학년(3), 전화번호(4), 주소(5);
 	private int index;
-	StIndex(int index) {
+	
+	StdIndex(int index) {
 		this.index = index;
 	}
 	
