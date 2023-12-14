@@ -1,14 +1,15 @@
 package com.callor.student.service.impl;
 
 import com.callor.student.models.MenuIndex;
+import com.callor.student.service.StudentService;
 import com.callor.student.utils.Line;
 
 public class StartServiceImplV2 extends StartServiceImplV1 {
-	public StartServiceImplV2() {
+	public StartServiceImplV2(StudentService stService) {
 		// scan = new Scanner(System.in)
 		// V1 의 생성자를 호출하여 V1 생성자에 있는
 		// 코드를 그대로 실행하겠다
- 		super(); // 항상 맨 첫번째에 있어야함
+ 		super(stService); // 항상 맨 첫번째에 있어야함
  		
  		// ImplV1 에서는 St..ServiceImplV1() 을 사용하여
  		// stService 를 초기화 하였다
@@ -16,6 +17,8 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
  		// 그럴때는 다시 stService를 ImplV1 를 초기화 하면 된다.
  		// stService = new StudentServiceImplV2();
 	}
+	
+	
 	
 	@Override
 	public void mainMenu() {
@@ -74,5 +77,5 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 			}
 		}
 		System.out.println("업무 종료~~");
-	}
+	}// end startApp()
 }
