@@ -8,10 +8,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-import com.callor.student.model.StudentDto;
 import com.callor.student.utils.Line;
 
-public class StudentService {
+public class StudentService{
 	List<StudentDto> studentList = null;
 	Scanner scan = null;
 	String stdDataFile = null;
@@ -65,19 +64,22 @@ public class StudentService {
 				System.out.println("학생찾기를 종료합니다");
 				break;
 			}
-			int index;
+			int index = 0;
 				for (StudentDto dto : studentList) {
 					if(str.equals(dto.name)) {
-						index ++;
-						System.out.printf("이름 : %s\n", dto.name);
-						System.out.printf("학과 : %s\n", dto.dept);
-						System.out.printf("학년 : %s\n", dto.grade);
-						System.out.printf("주소 : %s\n", dto.addr);
-						System.out.printf("전화번호 : %s\n", dto.tel);
 						break;
 					}
+					index ++;
 				}
-			
+				StudentDto dto = new StudentDto();
+			for (int i = 0; i < index; i++) {
+				System.out.printf("이름 : %s\n", dto.name);
+				System.out.printf("학과 : %s\n", dto.dept);
+				System.out.printf("학년 : %s\n", dto.grade);
+				System.out.printf("주소 : %s\n", dto.addr);
+				System.out.printf("전화번호 : %s\n", dto.tel);
+				break;
+			}
 			
 //			for (StudentDto dto : studentList) {
 //				if (str.equals(dto.name)) {
